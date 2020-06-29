@@ -47,7 +47,7 @@ Default output format [None]:
 
 ## Clone repository to a directory
 
-$ git clone https://github.com/karolnedza/controller_build.git .
+$ git clone https://github.com/aviatrix-automation/ace-controller-build.git .
 
 ## Go to controller directory and create ctrl_key.pem ssh-key
 
