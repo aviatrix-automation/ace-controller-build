@@ -33,6 +33,11 @@ $ aws --version
 aws-cli/1.14.44 Python/3.6.9 Linux/4.15.0-1065-aws botocore/1.8.48
 
 
+## Clone repository to a directory
+
+$ git clone https://github.com/aviatrix-automation/ace-controller-build.git .
+
+
 ## Add your AWS Access-Key and Secret-Key
 
 $ aws configure
@@ -45,9 +50,6 @@ Default region name [us-east-1]:
 
 Default output format [None]:
 
-## Clone repository to a directory
-
-$ git clone https://github.com/aviatrix-automation/ace-controller-build.git .
 
 ## Go to controller directory and create ctrl_key.pem ssh-key
 
