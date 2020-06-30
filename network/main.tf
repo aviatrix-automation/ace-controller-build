@@ -9,10 +9,10 @@ data "terraform_remote_state" "controller" {
 provider "aviatrix" {
   username = "admin"
   controller_ip = data.terraform_remote_state.controller.outputs.controller_public_ip
-  password = xxxxxxx
+  password = "Password123"
 }
 
-# 
+#
 # resource "aviatrix_vpc" "aws_vpc" {
 #   cloud_type           = 1
 #   account_name         = "aws-account"
