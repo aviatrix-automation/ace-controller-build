@@ -74,7 +74,7 @@ def onboard_controller(ctrl_url, account_id, cid, email):
     print(upgrade_latest.text.encode('utf8'))
 
 
-### Create txt file 
+### Create txt file
 
 def print_credentials(public_ip, email, password):
     with open("controller_settings.txt", "w+") as f:
@@ -89,7 +89,7 @@ def main():
     private_ip =  input("Enter Controller Private IP: ")
     account_id = input("Enter AWS Account ID: ")
     email = input("Enter recovery email: ")
-    password = input("Enter new password: ")
+    password = "Password123"
     ctrl_url = 'https://'+str(public_ip)+str("/v1/api")
 
     try:
