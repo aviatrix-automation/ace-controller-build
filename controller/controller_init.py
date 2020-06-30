@@ -67,7 +67,7 @@ def onboard_controller(ctrl_url, account_id, cid, email):
     set_aws_account = requests.request("POST", ctrl_url, headers = headers, data = aws_account, files = files, verify=False)
     print("Created AWS Access Account: ", set_aws_account.text.encode('utf8'))
 
-#### Upgrade Controller
+### Upgrade Controller
     print("Upgrading controller. It can take several minutes")
     upgrade = {'action': 'upgrade','CID': cid, 'version' : '6.0'}
     upgrade_latest = requests.request("POST", ctrl_url, headers=headers, data = upgrade, files = files, verify=False)
